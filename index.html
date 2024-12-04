@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Telegram Mini App</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 420px;
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0072ff;
+            background: #ffffff;
+            border: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0072ff;
+            color: #ffffff;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Mini App</h1>
+        </div>
+        
+        <button class="button" onclick="window.location.href='https://example.com/page1'">Feature 1</button>
+        <button class="button" onclick="window.location.href='https://example.com/page2'">Feature 2</button>
+        <button class="button" onclick="window.location.href='https://example.com/page3'">Feature 3</button>
+        
+        <div class="footer">
+            <p>Enjoy your experience with our mini app!</p>
+        </div>
+    </div>
+</body>
+</html>
